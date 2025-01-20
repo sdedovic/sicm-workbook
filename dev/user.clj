@@ -3,7 +3,7 @@
             [nextjournal.clerk :as clerk]))
 
 (def index
-  "notebooks/sdedovic/sicm_workbook.clj")
+  "notebooks/sdedovic/chapter_01.clj")
 
 (def defaults
   {;; NOTE by default, your project's first notebook is registered as its index;
