@@ -11,7 +11,7 @@
 
 
 ;; ## Helper Functions
-(def render (comp clerk/tex ->TeX))
+(def render (comp clerk/tex ->TeX simplify))
 
 
 ;; ----
@@ -103,9 +103,62 @@
           v (velocity local)]
       (- (* 1/2 m (square v)) (* 1/2 k (square q))))))
 
-(def q
-  (find-path-1 (L-harmonic 1 1) 0 1 (/ Math/PI 2) 0 3))
+(def q2
+  (find-path-1 (L-harmonic 1 1) 0 1 (/ Math/PI 2) 0 5))
 
 (let [xs (linear-interpolants 0 (/ Math/PI 2) 25)
-      ys (map #(evaluate q [%]) xs)]
+      ys (map #(evaluate q2 [%]) xs)]
   (clerk/plotly {:data [{:x xs :y ys}]}))
+
+
+;; ## 1.5.2 Computing Lagrange's Equations
+
+(defn Lagrange-equations-1 [Lagrangian]
+  (fn [q]
+    (- (D (compose ((partial 2) Lagrangian) (Gamma q)))
+       (compose ((partial 1) Lagrangian) (Gamma q)))))
+
+(defn test-path-2 [t]
+  (up (+ (* 'a t) 'a0)
+      (+ (* 'b t) 'b0)
+      (+ (* 'c t) 'c0)))
+
+(render
+  (((Lagrange-equations-1 (L-free-particle 'm))
+    test-path)
+   't))
+
+(render
+  (((Lagrange-equations-1 (L-free-particle 'm))
+    (literal-function 'x))
+   't))
+
+;; ### The harmonic Oscillator
+
+(defn proposed-solution [t]
+  (* 'A (cos (+ (* 'omega t) 'phi))))
+
+(render
+  (((Lagrange-equations-1 (L-harmonic 'm 'k))
+    proposed-solution)
+   't))
+
+;; ### Exercise 1.11: Kepler's third law
+
+;; Lagrangian for "central force" in polar coordinates. This is rotation
+;;  kinetic energy minus some potential $V$ that depends on the distance $r$ between the two particles.
+(defn L-central-polar [m V]
+  (fn [local]
+    (let [q (coordinate local)
+          qdot (velocity local)
+          r (ref q 0)
+          phi (ref qdot 1)
+          rdot (ref qdot 0)
+          phidot (ref qdot 1)]
+      (- (* 1/2 m
+            (+ (square rdot) (square (* r phidot))))
+         (V r)))))
+
+(defn gravitational-energy [G m1 m2]
+  (fn [r]
+    (- (/ (* G m1 m2) r))))
