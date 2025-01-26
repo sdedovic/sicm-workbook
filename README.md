@@ -9,11 +9,11 @@
   - [The MIT Course](https://groups.csail.mit.edu/mac/users/gjs/6946/)
 - Prerequisites
   - [Differential Equations (18.03)](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/)
-    - [Elementary Differential Equations 6th Edition](https://archive.org/details/C.HenryEdwardsDavidE.PenneyElementaryDifferentialEquations6thEdition)
+    - [Elementary Differential Equations with Boundary Value Problems (6e)](https://archive.org/details/C.HenryEdwardsDavidE.PenneyElementaryDifferentialEquations6thEdition)
   - [Multivariable Calculus (18.02)](https://ocw.mit.edu/courses/18-02-multivariable-calculus-fall-2007/)
-    - [Multivariable Calculus 6th Edition](#) (no online book)
+    - [Multivariable Calculus (6e)](#) (no online book)
   - [Single Variable Calculus (18.01)](https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/)
-    - [Calculus with Analytic Geometry 2nd Edition](https://archive.org/details/GeorgeSimmonsCalculusWithAnalyticGeometry1996McGrawHillScienceEngineeringMath)
+    - [Calculus with Analytic Geometry (2e)](https://archive.org/details/GeorgeSimmonsCalculusWithAnalyticGeometry1996McGrawHillScienceEngineeringMath)
   - [Classical Mechanics (18.01SC)](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/)
     - [18.01SC Online Textbook](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/)
 - Other Resources
