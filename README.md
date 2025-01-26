@@ -2,6 +2,24 @@
 
 [![License][license]][license-url]
 
+## Structure and Interpretation of Classical Mechanics
+- Resources
+  - [The SICM Book](https://tgvaughan.github.io/sicm/)
+    - [and errata PDF](https://groups.csail.mit.edu/mac/users/gjs/6.5160/errata.pdf)
+  - [The MIT Course](https://groups.csail.mit.edu/mac/users/gjs/6946/)
+- Prerequisites
+  - [Differential Equations (18.03)](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/)
+    - [Elementary Differential Equations 6th Edition](https://archive.org/details/C.HenryEdwardsDavidE.PenneyElementaryDifferentialEquations6thEdition)
+  - [Multivariable Calculus (18.02)](https://ocw.mit.edu/courses/18-02-multivariable-calculus-fall-2007/)
+    - [Multivariable Calculus 6th Edition](#) (no online book)
+  - [Single Variable Calculus (18.01)](https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/)
+    - [Calculus with Analytic Geometry 2nd Edition](https://archive.org/details/GeorgeSimmonsCalculusWithAnalyticGeometry1996McGrawHillScienceEngineeringMath)
+  - [Classical Mechanics (18.01SC)](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/)
+    - [18.01SC Online Textbook](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/online-textbook/)
+- Other Resources
+  - [Nextjournal Exercises by Sam Ritchie](https://nextjournal.com/sicm)
+  - [Notes and Exercises by Thomas Anthony](https://www.thomasantony.com/projects/sicm-workbook/)
+
 > **Note**
 > This README contains a good amount of Getting Started material. Feel free to delete anything that you don't want to keep, or move it to a file like `DEVELOPING.md`.
 
